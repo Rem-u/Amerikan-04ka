@@ -4,8 +4,9 @@ void Logo();
 int main()
 {
 	Logo();
-
 	int summ = 0, i;
+	start:
+	system("cls"); //чистит лого и остатки
 	cout << "Уровень:";
 	cin >> i;
 	for (int j = 1; j <= i; j++)
@@ -15,6 +16,7 @@ int main()
 	}
 	cout << "\n";
 	system("pause");
+	goto start;
 	return 0;
 }
 
@@ -36,7 +38,5 @@ void Logo() //To make it work, add to the additional properties of the console /
 		"║╚╝║──║║║║║╚═╗║║║║\n"
 		"╚══╝──╚╝╚╝╚══╝╚╝╚╝\n\n";
 	system("pause");
-	system("cls");
-
 	return;
 }
